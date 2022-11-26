@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Exo");
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+@keyframes animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Exo', sans-serif; }
+
+.header-nav {
+  width: 100%;
+  height: 15vh;
+  background-color: #1B9AE3;
+  font-size: 20px;
+  text-align: center; }
+  @media screen and (max-width: 800px) {
+    .header-nav {
+      height: 10vh; } }
+  @media screen and (max-width: 400px) {
+    .header-nav {
+      height: 5vh; } }
+  .header-nav span {
+    font-size: 40px;
+    margin-top: 20%;
+    color: white; }
+    @media screen and (max-width: 800px) {
+      .header-nav span {
+        font-size: 30px; } }
+    @media screen and (max-width: 400px) {
+      .header-nav span {
+        font-size: 20px; } }
+
+#main-div {
+  margin-top: 2%;
+  width: 60%;
+  height: 75vh;
+  background-image: url("../img/sun.jpg");
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 20%;
+  -webkit-box-shadow: 5px 5px 10px #072021;
+  box-shadow: 5px 5px 10px #072021; }
+  @media screen and (max-width: 800px) {
+    #main-div {
+      font-size: 16px;
+      height: 55vh; } }
+  @media screen and (max-width: 400px) {
+    #main-div {
+      font-size: 12px;
+      height: 45vh; } }
+  #main-div .description-div {
+    margin-bottom: 2%; }
+  #main-div ul li {
+    list-style: none; }
+  #main-div ul li a {
+    color: white;
+    font-size: 15px;
+    list-syle: none;
+    text-decoration: none; }
+    @media screen and (max-width: 800px) {
+      #main-div ul li a {
+        font-size: 15px; } }
+    @media screen and (max-width: 400px) {
+      #main-div ul li a {
+        font-size: 10px; } }
+  #main-div #location {
+    color: white; }
+  #main-div #temperature {
+    color: white; }
+  #main-div #location-img {
+    width: 100%;
+    height: 20vh;
+    margin-top: 1%; }
+  #main-div .location {
+    font-size: 25px;
+    color: white;
+    -webkit-animation-name: animation;
+    animation-name: animation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+    @media screen and (max-width: 800px) {
+      #main-div .location {
+        font-size: 15px;
+        height: 50vh; } }
+    @media screen and (max-width: 400px) {
+      #main-div .location {
+        font-size: 10px;
+        height: 40vh; } }
+  #main-div .temperature {
+    font-size: 25px;
+    color: white;
+    -webkit-animation-name: animation;
+    animation-name: animation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+    @media screen and (max-width: 800px) {
+      #main-div .temperature {
+        font-size: 15px;
+        height: 50vh; } }
+    @media screen and (max-width: 400px) {
+      #main-div .temperature {
+        font-size: 10px;
+        height: 40vh; } }
+  #main-div .description {
+    font-size: 25px;
+    color: white;
+    -webkit-animation-name: animation;
+    animation-name: animation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+    @media screen and (max-width: 800px) {
+      #main-div .description {
+        font-size: 15px;
+        height: 50vh; } }
+    @media screen and (max-width: 400px) {
+      #main-div .description {
+        font-size: 10px;
+        height: 40vh; } }
+  #main-div input[type=text] {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 6vh;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px;
+    box-shadow: 2px 2px;
+    font-family: 'Exo', sans-serif; }
+    @media screen and (max-width: 800px) {
+      #main-div input[type=text] {
+        font-size: 15px; } }
+    @media screen and (max-width: 500px) {
+      #main-div input[type=text] {
+        font-size: 10px; } }
+  #main-div input[type=button] {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20%;
+    height: 6vh;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #1B9AE3;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Exo', sans-serif; }
+    #main-div input[type=button]:hover {
+      cursor: pointer;
+      background-color: #8AC0FD; }
+    @media screen and (max-width: 800px) {
+      #main-div input[type=button] {
+        font-size: 15px; } }
+    @media screen and (max-width: 500px) {
+      #main-div input[type=button] {
+        font-size: 10px; } }
+
+#sec-div {
+  left: 540px;
+  top: -10px;
+  position: relative;
+  width: 20%;
+  height: 5vh;
+  background-color: #1B9AE3;
+  text-align: center;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in; }
+  @media screen and (max-width: 1200px) {
+    #sec-div {
+      display: none; } }
+
+#sec-div:hover {
+  width: 21%;
+  height: 5vh;
+  background-color: #8AC0FD; }

@@ -1,0 +1,229 @@
+//variables
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+$deepBlue:#1B9AE3;
+
+
+@mixin font{
+	font-family: 'Exo', sans-serif;
+}
+
+@mixin mQ($arg){ //media query
+	@media screen and (max-width: ($arg)){
+	@content;
+	}
+}
+@keyframes animation{
+	0% {opacity:0;}
+	50% {opacity:0.5;}
+	100% {opacity:1;}
+}
+@mixin opacity{
+	animation-name: animation;
+	animation-duration:1s;
+	animation-iteration-count: 1;
+}
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Exo', sans-serif;
+}
+
+.header-nav{
+	width:100%;
+	height:15vh;
+	background-color:$deepBlue;
+	font-size:20px;
+	text-align:center;
+	@include mQ(800px){
+		height:10vh;
+		
+	}
+	@include mQ(400px){
+		height:5vh;
+	
+	}
+
+	span{
+	font-size:40px;
+	margin-top:20%;
+	color:white;
+	@include mQ(800px){
+		font-size:30px;
+		
+	}
+	@include mQ(400px){
+		font-size:20px;
+	
+	}
+	}
+}
+
+#main-div{
+	margin-top:2%;
+	width:60%;
+	height:75vh;
+	background-image:url("../img/rain.jpg");
+	text-align:center;
+	border-radius:10px;
+	position:relative;
+	margin-left:(20%);
+	box-shadow:5px 5px 10px #072021;
+	@include mQ(800px){
+		font-size:16px;
+			height:55vh;
+	}
+	@include mQ(400px){
+		font-size:12px;
+			height:45vh;
+	}
+	.description-div{
+	margin-bottom:2%;
+	}
+	ul li{
+	list-style:none;
+	}
+	ul li a{
+	color:white;
+	font-size:15px;
+	list-syle:none;
+	text-decoration:none;
+	@include mQ(800px){
+		font-size:15px;
+	}
+	@include mQ(400px){
+		font-size:10px;
+	}
+	}
+
+	#location{
+	color:white;
+	}
+
+	#temperature{
+	color:white;
+	}
+
+
+	#location-img{
+	width:100%;
+	height:20vh;
+	margin-top:1%;
+	}
+	.location{
+	font-size:25px;
+	color:white;
+	@include mQ(800px){
+		font-size:15px;
+		height:50vh;
+	}
+	@include mQ(400px){
+		font-size:10px;
+		height:40vh;
+	}
+
+	@include opacity;
+	}
+	.temperature{
+	font-size:25px;
+	color:white;
+	@include mQ(800px){
+		font-size:15px;
+		height:50vh;
+	}
+	@include mQ(400px){
+		font-size:10px;
+		height:40vh;
+	}
+
+	@include opacity;
+	}
+	.description{
+	font-size:25px;
+	color:white;
+	@include mQ(800px){
+		font-size:15px;
+		height:50vh;
+	}
+	@include mQ(400px){
+		font-size:10px;
+		height:40vh;
+	}
+
+	@include opacity;
+	}
+
+	input[type=text]{
+	margin-top:5%;
+	margin-bottom:5%;
+	width:50%;
+	height:6vh;
+	font-size:20px;
+	border:0;
+	border-radius:5px;
+	box-shadow:2px 2px;
+	@include font;
+	@include mQ(800px){
+		font-size:15px;
+	}
+	@include mQ(500px){
+		font-size:10px;
+
+	}
+						
+	}
+	
+	input[type=button]{
+	margin-top:5%;
+	margin-bottom:5%;
+	width:20%;
+	height:6vh;
+	font-size:20px;
+	border:0;
+	border-radius:5px;
+	background-color:$deepBlue;
+	color:white;
+	margin-left:10px;
+	&:hover{
+		cursor:pointer;
+		background-color:#8AC0FD;
+	}
+	@include mQ(800px){
+		font-size:15px;
+	}
+	@include mQ(500px){
+		font-size:10px;
+	}
+	@include font;
+	}
+	
+}
+
+#sec-div{
+	left:540px;
+	top:-10px;
+	position:relative;
+	width:20%;
+	height:5vh;
+	background-color:$deepBlue;
+	text-align:center;
+	border:0;
+	border-radius:10px;
+	color:white;
+	transition:0.1s ease-in;
+	@include mQ(1200px){
+	display:none;
+	}
+}
+#sec-div:hover{
+	width:21%;
+	height:5vh;
+	background-color:#8AC0FD;
+}
+
+
