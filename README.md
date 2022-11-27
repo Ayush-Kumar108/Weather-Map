@@ -1,5 +1,5 @@
 # Weather-Map
-A pretty cool weather app that gives in formation about the weather of an area on the Globe!! 
+A pretty cool weather app that gives information about the weather of an area on the Globe!!!!!!!!!!!
 
 # Screenshorts
 
